@@ -1,8 +1,4 @@
-const Discord = require('discord.js')
-const ayarlar = require('../ayarlar.json')
 
-exports.run = async (client ,message ,args) => {
-   
  
    
     if (!message.member.hasPermission('MOVE_MEMBERS')) return message.channel.send('`Bu Kodu Kullanmaya iznin Yok`');
@@ -19,16 +15,4 @@ exports.run = async (client ,message ,args) => {
         üye.voice.setChannel(args[1])
       }
         
-        //developed By Atkansa
-    }
-exports.conf = {
-  enabled: true,
-  guildOnly: false,
-  aliases: [],
-  permLevel: 0
-};
-//Dcs
-exports.help = {
-  name: "taşı",
-  kategori:'sahip'
-};
+ 
